@@ -63,7 +63,7 @@ app.use(express.urlencoded({express: true}));
 
 
 app.use('/users', require('./routes/users.js'));
-//app.use('/api/v1/comment', require('./routes/commentRoute'));
+app.use('/api/v1/comment', require('./routes/commentRoute'));
 app.use('/api/v1/user', require('./routes/userRoute'));
 app.use('/', require('./routes/index.js'));
 app.get('/', (req, res, next) =>{
