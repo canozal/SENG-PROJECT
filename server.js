@@ -20,8 +20,8 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 // Routes
-app.use('/', require('./routes/index.js'));
-app.use('/users', require('./routes/users.js'));
+//app.use('/', require('./routes/index.js'));
+//app.use('/users', require('./routes/users.js'));
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
